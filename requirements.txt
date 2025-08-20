@@ -1,0 +1,15 @@
+# Numeric stack pinned to NumPy 1.x (compat w/ SciPy & OpenCV below)
+numpy==1.26.4
+scipy==1.11.4
+
+# OpenCV (headless build; no GUI windows)
+opencv-python-headless==4.11.0.86
+
+# YOLO + annotation utilities
+ultralytics==8.3.182
+supervision==0.26.1
+
+# Notebook / plotting helpers
+matplotlib<3.9
+ipywidgets>=8.1
+tqdm>=4.66
