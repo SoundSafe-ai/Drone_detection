@@ -1,5 +1,9 @@
 # Drone Detection – Inference README
 
+![Sample Inference Example](example_inference.png)
+
+This inference was one in a single A100 GPU.
+
 ## What this is
 
 A fast, single-file video inference pipeline that:
