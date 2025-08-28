@@ -2,7 +2,7 @@
 
 ![Sample Inference Example](example_inference.png)
 
-This inference was one in a single A100 GPU.
+This inference was done in a single A100 GPU. Achieved an average of 24FPS.
 
 ## What this is
 
