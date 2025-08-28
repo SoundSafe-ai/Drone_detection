@@ -31,6 +31,9 @@ torch.backends.cudnn.benchmark = True
 torch.backends.cuda.matmul.allow_tf32 = True  # harmless for inference
 
 ## ---------------UPDATE THE PATHS----------------------
+HOME = os.getcwd()
+print("HOME:", HOME)
+
 SOURCE_VIDEO_PATH = Path(HOME) / "anduril_swarm.mp4"
 SOURCE_WEIGHTS_PATH = Path(HOME) / "yolov11n-UAV-finetune.pt"
 
@@ -46,8 +49,7 @@ def _ipython_magic_safe(line: str):
     # In script mode, ignore IPython magic
     return f"# [ignored IPython magic in .py] {line}"
 
-HOME = os.getcwd()
-print("HOME:", HOME)
+
 
 MODEL = YOLO(SOURCE_WEIGHTS_PATH)
 MODEL.to("cuda:0")
